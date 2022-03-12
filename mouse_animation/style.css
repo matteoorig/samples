@@ -9,3 +9,16 @@ body{
     justify-content: center;
     align-items: center;
 }
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+
+    letter-spacing: 10px;
+    -webkit-text-stroke: 2px #2C3D55 ;
+    -webkit-text-fill-color: white;
+    margin: 15px;
+}
+h1:hover{
+    -webkit-text-fill-color: black;
+}
+
