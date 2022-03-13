@@ -9,3 +9,8 @@ On hover of an HTMLElement the mouse will change size, scale, opacity etc.
 
 `yarn`
 > yarn add gsap
+
+
+`npm` | `yarn`
+------------ | -------------   
+> npm i gsap| > yarn add gsap
