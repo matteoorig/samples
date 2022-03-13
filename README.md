@@ -4,13 +4,6 @@
 On hover of an HTMLElement the mouse will change size, scale, opacity etc.
 ![Alt Text](/risorseReadme/mouse_animationG.gif)
 ###### Dependencies
-`npm`
-> npm i gsap
-
-`yarn`
-> yarn add gsap
-
-
-`npm` | `yarn`
+**npm** | **yarn**
 ------------ | -------------   
-> npm i gsap| > yarn add gsap
+`npm i gsap`| `yarn add gsap`
