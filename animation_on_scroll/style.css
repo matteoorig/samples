@@ -4,3 +4,20 @@
     box-sizing: border-box;
 }
 
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    border-radius: 25px;
+}
+.up{
+    width: 100%;
+    height: 100%;
+    border: 1px solid greenyellow;
+}
+
+.container{
+    width: 100%;
+    height: 50%;
+    
+}
