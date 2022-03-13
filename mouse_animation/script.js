@@ -90,14 +90,6 @@ class Cursor{
         this.Cursor.classList.remove("media-blend");
         this.scaleAnimation(this.Cursor.children[0], 0, 0.8);
       });
-
-      
-
-    
-
-      
-
-
     });
    }
 
@@ -133,7 +125,13 @@ class Cursor{
 }
 
 //main
-
+const body = document.querySelector("body");
 window.onload = () =>{
+  body.classList.remove("loading");
+  gsap.from(body, {
+    opacity:0,
+    duration:1,
+    ease:"Power3.easeInOut",
+  })
   const cursor = new Cursor(document.querySelector(".cursor"));
 }

@@ -9,6 +9,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+.loading{
+    visibility: hidden;
+}
 .container{
     display: flex;
     justify-content: center;
