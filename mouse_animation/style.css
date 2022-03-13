@@ -9,6 +9,11 @@ body{
     justify-content: center;
     align-items: center;
 }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 h1{
     font-family: 'Roboto', sans-serif;
     font-size: 100px;
@@ -19,7 +24,7 @@ h1{
     margin: 15px;
 }
 h1:hover{
-    -webkit-text-fill-color: black;
+    -webkit-text-fill-color: #2C3D55;
 }
 
 /* mouse */
@@ -27,9 +32,16 @@ h1:hover{
     position: fixed;
     top: 0px;
     left: 0px;
-    z-index: 10;
+    z-index: -1;
     contain: layout style size;
     pointer-events: none;
+}
+.media-blend{
+    z-index: 10;
+    mix-blend-mode: exclusion;
+}
+.cursor-media{
+    filter: invert(1);
 }
 .cursor::before{
     content: "";
