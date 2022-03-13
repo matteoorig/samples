@@ -59,7 +59,7 @@ class Cursor{
 
         //animation
         gsap.to(this.Cursor, {
-          duration:1,
+          duration:0.8,
           ease: "Power3.easeOut",
           opacity:1,
         })
