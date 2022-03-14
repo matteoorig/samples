@@ -7,3 +7,7 @@ On hover of an HTMLElement the mouse will change size, scale, opacity etc.
 **npm** | **yarn**
 ------------ | -------------   
 `npm i gsap`| `yarn add gsap`
+## infinite_roll
+###### Description
+Infinite loop that can be transformed as if it were a div.
+![Alt Text](/risorseReadme/infinite_roll.gif)
