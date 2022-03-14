@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    align-items: center;
+}
+.hscroll-wrapper {
+    height: fit-content;
+    width: 100vw;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #ccff00;
+    transform: rotate(45deg);
+}
+.hscroll {
+    display: inline-block;
+    font-size: 100px;
+    font-weight: 900;
+    animation: hscrollTranslate 20s linear infinite;
+}
+
+@keyframes hscrollTranslate {
+    100% {
+        transform: translateX(-100%);
+    }
+}

@@ -1,110 +1,58 @@
-body, html{
+body,
+html {
   height: 100%;
   overflow: hidden;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
 body {
-  margin:0;
-  font-family:Georgia;
+  margin: 0;
+  font-family: Georgia;
 }
 #container .box {
-    width: 100vh;
-    height: 100vw;
-    display: inline-block;
-    position: relative;
-    padding: 10%;
-    box-sizing: border-box;
+  width: 100vh;
+  height: 100vw;
+  display: inline-block;
+  position: relative;
+  padding: 10%;
+  box-sizing: border-box;
 }
 #container .box > div {
-    transform-origin: top left;
-    width: 92vw;
-    height: 100vh;
-    transform: rotate(90deg) translateY(-82vh);
-    transform-origin: top left;
+  transform-origin: top left;
+  width: 92vw;
+  height: 100vh;
+  transform: rotate(90deg) translateY(-82vh);
+  transform-origin: top left;
 }
-#container2 {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background-color: #999;
-    width: calc(100vh + 25px);
-    height: 100vw;
-    transform: rotate(270deg) translateX(-100%);
+#wrapper {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #999;
+  width: calc(100vh + 25px);
+  height: 100vw;
+  transform: rotate(270deg) translateX(-100%);
   transform-origin: top left;
   position: relative;
-    top: -25px;
+  top: -25px;
 }
 #container {
-  
 }
 
 .one {
-  background-color: #45CCFF;
+  background-color: #45ccff;
 }
 .two {
-  background-color: #49E83E;
+  background-color: #49e83e;
 }
 .three {
-  background-color: #EDDE05;
+  background-color: #edde05;
 }
 .four {
-  background-color: #E84B30;
+  background-color: #e84b30;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 body {
@@ -157,4 +105,3 @@ body {
 .four {
   background-color: #E84B30;
 }*/
-
