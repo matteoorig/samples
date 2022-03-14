@@ -10,4 +10,4 @@ On hover of an HTMLElement the mouse will change size, scale, opacity etc.
 ## infinite_roll
 ###### Description
 Infinite loop that can be transformed as if it were a div.
-![Alt Text](/risorseReadme/infinite_roll.gif)
+![Alt Text](/risorseReadme/infinite_rollG.gif)
