@@ -1,0 +1,84 @@
+GSAP 
+
+Get Started
+https://greensock.com/get-started/#tweening-basics
+GSAP per React
+https://greensock.com/react
+PLUG IN
+https://greensock.com/gsap-plugins/
+
+
+
+
+- opzioni oggetto gsap
+
+    gsap.to(".class",{
+        ...
+    })
+    https://greensock.com/docs/v3/GSAP/Tween/vars
+
+
+- editor di animazioni
+
+    gsap.to(".class",{
+        duration: 1,
+        ease: ...
+    })
+    https://greensock.com/docs/v3/Eases
+
+
+
+GSAP Introduzione
+.to consente di definire i valori di destinazione 
+gsap.to( elementoDOM/obj ,{
+        ...
+})
+
+.from serve per definire i valori iniziali di un oggetto come se fosse un setup css
+gsap.from( elementoDOM/obj ,{
+        ...
+})
+
+gsap.to(...) può diventare benissimo un oggetto
+let tween = gsap.to(...)
+
+in modo da poter:
+avviare: tween.play()
+stoppare:  tween.pause()
+riprendi: tween.resume()
+al contrario: tween.reverse()
+riparti da 0: tween.restart()
+
+PROPRIETA' SPECIALI
+gsap.to(".class",{
+        duration: 1, <= proprietà speciali
+        ease: ...
+})
+Una proprietà speciale è come una parola chiave riservata che GSAP gestisce in modo 
+diverso da una normale proprietà (animata). Le proprietà speciali vengono utilizzate
+per definire callback, ritardi, andamento, scaglionamenti e altro.
+duration: durata animazione
+delay: Il ritardo prima di iniziare un'animazione.
+onComplete: Un callback che dovrebbe essere richiamato al termine dell'animazione.
+onUpdate: Un callback che dovrebbe essere invocato ogni volta che l'animazione viene aggiornata/renderizzata.
+ease: Tipo di animazione | si possono usare anche quelle custom
+yoyo: true SE il loop va avanti e torna indietro non fa solo quella in avanti e riparte scattando
+repeat : -1 manda in loop
+stagger: 0.1 sono i millisecondi che deve aspettare dall'inizio dell'animazione dell'elemento precedente nella stessa animazione
+    {
+        from: gli si dice l'indice degli elementi siccome spesso sarà un array se si usa lo stagger center | end | edges | random
+        grid: auto per animazioni 2D quindi griglia
+        axis: y | x verso dell'animazione
+    }
+TIMELINE
+Per creare una sequenza di animazioni è giusto utilizzare la timeline
+
+var tl = gsap.timeline({repeat: 2, repeatDelay: 1});
+tl.to("#id", {x: 100, duration: 1});
+tl.to("#id", {y: 50, duration: 1});                 in questo modo con tre .to saranno in sequenza non insieme
+tl.to("#id", {opacity: 0, duration: 1});
+
+tl.pause();
+tl.resume();
+tl.seek(1.5);
+tl.reverse();
