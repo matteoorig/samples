@@ -12,7 +12,14 @@ const item = document.querySelector(".item");
 
 
 */
+
+gsap.registerPlugin(ScrollTrigger);
 gsap.to(item, {
-    duration: 3,
-    x:300,
+    scrollTrigger: {
+        trigger: item,
+        toggleActions: "play none none reverse"
+    },
+    x: 400,
+    rotation: 360,
+    duration: 2
 })

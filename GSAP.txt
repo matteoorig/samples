@@ -1,5 +1,7 @@
 GSAP 
 
+Import
+https://greensock.com/docs/v3/Installation?checked=core,scrollTrigger
 Get Started
 https://greensock.com/get-started/#tweening-basics
 GSAP per React
@@ -49,6 +51,7 @@ riprendi: tween.resume()
 al contrario: tween.reverse()
 riparti da 0: tween.restart()
 
+
 PROPRIETA' SPECIALI
 gsap.to(".class",{
         duration: 1, <= proprietà speciali
@@ -70,6 +73,29 @@ stagger: 0.1 sono i millisecondi che deve aspettare dall'inizio dell'animazione 
         grid: auto per animazioni 2D quindi griglia
         axis: y | x verso dell'animazione
     }
+
+
+PARAMETRI DI POSIZIONE
+gsap.to(".class",{
+        duration: 1,
+        ease: ...
+},  ...) <= parametri di posizione
+
+3: parte dopo 3 secondi che inizia la timeline
+"<": parte quando parte l'animazione precendente
+">": parte quando finisce l'animazione precendente
+"+=1": inizia 1 secondo dopo l'animazione precedente
+"-=0.5": inziai o.5 secondi prima della fine di quella precendente
+
+CALLBACK 
+metodi di callback:
+onComplete:
+onStart:
+onUpdate: 
+onRepeat: 
+onReverseComplete: 
+
+
 TIMELINE
 Per creare una sequenza di animazioni è giusto utilizzare la timeline
 
@@ -82,3 +108,24 @@ tl.pause();
 tl.resume();
 tl.seek(1.5);
 tl.reverse();
+
+Plug-in
+SCROLLTRIGGER
+
+Ricordarsi di fare l'installazione nell'index o npm
+Registrare il plug in
+    gsap.registerPlugin(ScrollTrigger)
+
+gsap.to(item, {
+    scrollTrigger: {
+        trigger: item, <= indentifica l'elemento che entra nella view port
+        toggleActions: "play none none reverse"
+    },
+    x: 400,
+    rotation: 360,
+    duration: 2
+})
+
+toggleActions: 
+[    ]
+ play 
